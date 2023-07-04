@@ -1,4 +1,4 @@
-package leetcode.array;
+package leetcode.n1_array;
 
 /**
  * @author wangjinjin@didiglobal.com
