@@ -12,6 +12,8 @@ import org.apache.commons.lang3.StringUtils;
 public class FormatConversion {
 
     /**
+     * 字符串转一维int数组
+     *
      * @param str
      * @return
      */
@@ -21,6 +23,20 @@ public class FormatConversion {
         str = StringUtils.remove(str, " ");
         String[] split = str.split(",");
         return Arrays.stream(split).map(Integer::parseInt).mapToInt(Integer::intValue).toArray();
+    }
+
+    /**
+     * 字符串转二维int数组
+     *
+     * @param str
+     * @return
+     */
+    public static int[][] strToIntArrayArray(String str) {
+        str = StringUtils.removeStart(str, "[");
+        str = StringUtils.removeEnd(str, "]");
+        str = StringUtils.remove(str, " ");
+        String[] split = str.split("\\],\\[");
+        return Arrays.stream(split).map(FormatConversion::strToIntArray).toArray(int[][]::new);
     }
 
 }
