@@ -20,7 +20,7 @@ public class FormatConversion {
     public static int[] strToIntArray(String str) {
         str = StringUtils.removeStart(str, "[");
         str = StringUtils.removeEnd(str, "]");
-        str = StringUtils.remove(str, " ");
+        str = StringUtils.deleteWhitespace(str);
         String[] split = str.split(",");
         return Arrays.stream(split).map(Integer::parseInt).mapToInt(Integer::intValue).toArray();
     }
@@ -34,7 +34,7 @@ public class FormatConversion {
     public static int[][] strToIntArrayArray(String str) {
         str = StringUtils.removeStart(str, "[");
         str = StringUtils.removeEnd(str, "]");
-        str = StringUtils.remove(str, " ");
+        str = StringUtils.deleteWhitespace(str);
         String[] split = str.split("\\],\\[");
         return Arrays.stream(split).map(FormatConversion::strToIntArray).toArray(int[][]::new);
     }
