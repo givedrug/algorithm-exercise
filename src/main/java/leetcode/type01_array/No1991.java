@@ -5,6 +5,7 @@ import static leetcode.common.FormatConversion.strToIntArray;
 /**
  * 1991. Find the Middle Index in Array
  *
+ * @author <a href="https://github.com/givedrug">givedrug</a>
  * @create 2023-07-03 19:28
  */
 public class No1991 {
@@ -20,9 +21,6 @@ public class No1991 {
     /**
      * 思路：先求和，然后遍历数组，同时记录左右数组和
      * 复杂度：2n
-     *
-     * @param nums
-     * @return
      */
     public static int findMiddleIndex(int[] nums) {
         int sum = 0;
