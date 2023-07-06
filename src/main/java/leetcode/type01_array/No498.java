@@ -24,6 +24,7 @@ public class No498 {
      * 复杂度：m*n
      */
     public static int[] findDiagonalOrder(int[][] mat) {
+        // 边界判断
         int m = mat.length;
         if (m == 0) {
             return new int[0];
@@ -33,6 +34,7 @@ public class No498 {
             return new int[0];
         }
 
+        // 按序输出
         int maxSum = (m - 1) + (n - 1);
         int[] result = new int[m * n];
         int index = 0;
