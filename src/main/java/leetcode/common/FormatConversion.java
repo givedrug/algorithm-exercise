@@ -39,4 +39,18 @@ public class FormatConversion {
         return Arrays.stream(split).map(FormatConversion::strToIntArray).toArray(int[][]::new);
     }
 
+    /**
+     * 字符串转一维String数组
+     *
+     * @param str
+     * @return
+     */
+    public static String[] strToStringArray(String str) {
+        str = StringUtils.removeStart(str, "[");
+        str = StringUtils.removeEnd(str, "]");
+        str = StringUtils.deleteWhitespace(str);
+        str = StringUtils.remove(str, "\"");
+        return str.split(",");
+    }
+
 }
