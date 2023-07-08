@@ -1,6 +1,7 @@
 package leetcode.type01_array;
 
-import java.util.Arrays;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.Collectors;
 
 /**
@@ -21,14 +22,31 @@ public class No151 {
     }
 
     /**
-     * 思路：使用java8，分割、过滤、反转、拼接
-     * 复杂度：？
+     * 思路：顺序遍历，跳过空格，遇到非空格后记录单词，并将单词放入list，最后join空格并返回
+     * 或者可以直接使用java8，分割、过滤、反转、拼接
+     * 一行代码：
+     * Arrays.stream(s.split("\\s+"))
+     * .filter(e -> !"".equals(e))
+     * .sorted((pre, next) -> -1)
+     * .collect(Collectors.joining(" "));
+     * 复杂度：n
      */
     public static String reverseWords(String s) {
-        return Arrays.stream(s.split("\\s+"))
-                .filter(e -> !"".equals(e))
-                .sorted((pre, next) -> -1)
-                .collect(Collectors.joining(" "));
+        char[] charArray = s.toCharArray();
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < charArray.length; i++) {
+            if (charArray[i] == ' ') {
+                continue;
+            }
+            StringBuilder sb = new StringBuilder();
+            while (i < charArray.length && charArray[i] != ' ') {
+                sb.append(charArray[i++]);
+            }
+            if (sb.length() > 0) {
+                list.add(0, sb.toString());
+            }
+        }
+        return list.stream().collect(Collectors.joining(" "));
     }
 
 }
