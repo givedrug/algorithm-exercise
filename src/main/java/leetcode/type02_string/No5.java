@@ -1,4 +1,4 @@
-package leetcode.type01_array;
+package leetcode.type02_string;
 
 /**
  * 5. Longest Palindromic Substring

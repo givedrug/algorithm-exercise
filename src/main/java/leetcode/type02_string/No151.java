@@ -1,4 +1,4 @@
-package leetcode.type01_array;
+package leetcode.type02_string;
 
 import java.util.ArrayList;
 import java.util.List;
