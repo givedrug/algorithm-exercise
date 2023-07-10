@@ -1,8 +1,8 @@
 package leetcode.common;
 
-import java.util.Arrays;
-
 import org.apache.commons.lang3.StringUtils;
+
+import java.util.Arrays;
 
 /**
  * 测试数据格式转换
@@ -37,6 +37,21 @@ public class FormatConversion {
         str = StringUtils.deleteWhitespace(str);
         String[] split = str.split("\\],\\[");
         return Arrays.stream(split).map(FormatConversion::strToIntArray).toArray(int[][]::new);
+    }
+
+    /**
+     * 字符串转一维char数组
+     *
+     * @param str
+     * @return
+     */
+    public static char[] strToCharArray(String str) {
+        str = StringUtils.removeStart(str, "[");
+        str = StringUtils.removeEnd(str, "]");
+        str = StringUtils.deleteWhitespace(str);
+        str = StringUtils.remove(str, "\"");
+        str = StringUtils.remove(str, ",");
+        return str.toCharArray();
     }
 
     /**
