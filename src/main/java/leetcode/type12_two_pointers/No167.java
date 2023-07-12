@@ -22,7 +22,7 @@ public class No167 {
     }
 
     /**
-     * 思路：对撞指针
+     * 思路：对撞双指针
      * 复杂度：n
      */
     public static int[] twoSum(int[] numbers, int target) {
