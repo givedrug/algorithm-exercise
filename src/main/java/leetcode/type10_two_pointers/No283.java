@@ -1,4 +1,4 @@
-package leetcode.type12_two_pointers;
+package leetcode.type10_two_pointers;
 
 import java.util.Arrays;
 

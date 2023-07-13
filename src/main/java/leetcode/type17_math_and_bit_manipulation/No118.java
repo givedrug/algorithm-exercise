@@ -1,4 +1,4 @@
-package leetcode.type21_math_and_bit_manipulation;
+package leetcode.type17_math_and_bit_manipulation;
 
 import java.util.ArrayList;
 import java.util.List;

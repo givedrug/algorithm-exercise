@@ -1,4 +1,4 @@
-package leetcode.type11_sliding_window;
+package leetcode.type09_sliding_window;
 
 import static leetcode.common.FormatConversion.strToIntArray;
 
