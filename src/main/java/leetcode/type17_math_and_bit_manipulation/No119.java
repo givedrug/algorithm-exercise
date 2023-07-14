@@ -46,7 +46,7 @@ public class No119 {
      * 注意不要使用int，会溢出，但leetcode不能使用BigInteger
      * 复杂度：n
      */
-    public static List<Integer> getRow0(int rowIndex) {
+    public static List<Integer> getRowMultiple(int rowIndex) {
         BigInteger[] factorial = getFactorialArray(rowIndex);
         List<Integer> row = new ArrayList<>(rowIndex + 1);
         for (int i = 0; i < rowIndex + 1; i++) {

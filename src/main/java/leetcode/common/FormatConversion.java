@@ -1,15 +1,31 @@
 package leetcode.common;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 import org.apache.commons.lang3.StringUtils;
 
-import java.util.Arrays;
+import leetcode.common.DataStructureDefinition.ListNode;
 
 /**
- * 测试数据格式转换
+ * 数据格式转换
  *
  * @create 2023-07-04 15:43
  */
 public class FormatConversion {
+
+    /**
+     * 去掉前后中括号与空格
+     *
+     * @param str
+     * @return
+     */
+    private static String commonRemove(String str) {
+        str = StringUtils.removeStart(str, "[");
+        str = StringUtils.removeEnd(str, "]");
+        str = StringUtils.deleteWhitespace(str);
+        return str;
+    }
 
     /**
      * 字符串转一维int数组
@@ -18,10 +34,10 @@ public class FormatConversion {
      * @return
      */
     public static int[] strToIntArray(String str) {
-        str = StringUtils.removeStart(str, "[");
-        str = StringUtils.removeEnd(str, "]");
-        str = StringUtils.deleteWhitespace(str);
-        String[] split = str.split(",");
+        String[] split = commonRemove(str).split(",");
+        if (split.length == 0 || (split.length == 1 && Objects.equals(split[0], ""))) {
+            return new int[]{};
+        }
         return Arrays.stream(split).map(Integer::parseInt).mapToInt(Integer::intValue).toArray();
     }
 
@@ -32,10 +48,7 @@ public class FormatConversion {
      * @return
      */
     public static int[][] strToIntArrayArray(String str) {
-        str = StringUtils.removeStart(str, "[");
-        str = StringUtils.removeEnd(str, "]");
-        str = StringUtils.deleteWhitespace(str);
-        String[] split = str.split("\\],\\[");
+        String[] split = commonRemove(str).split("\\],\\[");
         return Arrays.stream(split).map(FormatConversion::strToIntArray).toArray(int[][]::new);
     }
 
@@ -46,9 +59,7 @@ public class FormatConversion {
      * @return
      */
     public static char[] strToCharArray(String str) {
-        str = StringUtils.removeStart(str, "[");
-        str = StringUtils.removeEnd(str, "]");
-        str = StringUtils.deleteWhitespace(str);
+        str = commonRemove(str);
         str = StringUtils.remove(str, "\"");
         str = StringUtils.remove(str, ",");
         return str.toCharArray();
@@ -61,11 +72,31 @@ public class FormatConversion {
      * @return
      */
     public static String[] strToStringArray(String str) {
-        str = StringUtils.removeStart(str, "[");
-        str = StringUtils.removeEnd(str, "]");
-        str = StringUtils.deleteWhitespace(str);
+        str = commonRemove(str);
         str = StringUtils.remove(str, "\"");
         return str.split(",");
+    }
+
+    /**
+     * 字符串转ListNode，返回head
+     *
+     * @param str
+     * @return
+     */
+    public static ListNode strToListNode(String str) {
+        int[] intArray = strToIntArray(str);
+        ListNode head = null;
+        ListNode current = null;
+        for (int i = 0; i < intArray.length; i++) {
+            if (Objects.isNull(head)) {
+                head = new ListNode(intArray[i]);
+                current = head;
+            } else {
+                current.next = new ListNode(intArray[i]);
+                current = current.next;
+            }
+        }
+        return head;
     }
 
 }
