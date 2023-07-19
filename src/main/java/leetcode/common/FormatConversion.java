@@ -99,4 +99,28 @@ public class FormatConversion {
         return head;
     }
 
+    /**
+     * 字符串转ListNode，并在pos出成环，返回head
+     *
+     * @param str
+     * @param pos
+     * @return
+     */
+    public static ListNode strToListNodeWithCycle(String str, int pos) {
+        ListNode head = strToListNode(str);
+        if (pos >= 0) {
+            ListNode posNode = head;
+            while (pos > 0) {
+                posNode = posNode.next;
+                pos--;
+            }
+            ListNode tail = posNode;
+            while (tail.next != null) {
+                tail = tail.next;
+            }
+            tail.next = posNode;
+        }
+        return head;
+    }
+
 }
