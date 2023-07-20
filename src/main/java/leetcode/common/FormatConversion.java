@@ -100,7 +100,7 @@ public class FormatConversion {
     }
 
     /**
-     * 字符串转ListNode，并在pos出成环，返回head
+     * 字符串转ListNode，并在pos处成环，返回head
      *
      * @param str
      * @param pos
