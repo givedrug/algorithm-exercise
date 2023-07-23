@@ -24,6 +24,7 @@ public class No206 {
 
     /**
      * 思路：快中慢三指针
+     * 另外，还可以遍历当前指针，并用头插法插入新list
      * 另外，官方解答中还有一种递归方式，虽然空间复杂度为n，但形式简单：
      * ListNode prev = null;
      * ListNode curr = head;

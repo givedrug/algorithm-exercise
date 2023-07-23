@@ -1,4 +1,4 @@
-package leetcode.type03_linked_list;
+package leetcode.type10_two_pointers;
 
 import leetcode.common.DataStructureDefinition.ListNode;
 
