@@ -78,7 +78,7 @@ public class FormatConversion {
     }
 
     /**
-     * 字符串转ListNode，返回head
+     * 字符串转List，返回head
      *
      * @param str
      * @return
@@ -97,6 +97,20 @@ public class FormatConversion {
             }
         }
         return head;
+    }
+
+    /**
+     * 字符串转List数组
+     *
+     * @param str
+     * @return
+     */
+    public static ListNode[] strToListNodeArray(String str) {
+        String[] split = commonRemove(str).split("\\],\\[");
+        if (split.length == 0) {
+            return new ListNode[0];
+        }
+        return Arrays.stream(split).map(FormatConversion::strToListNode).toArray(ListNode[]::new);
     }
 
     /**
