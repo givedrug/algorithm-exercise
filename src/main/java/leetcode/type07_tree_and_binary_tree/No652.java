@@ -1,4 +1,4 @@
-package leetcode.type04_hash_table;
+package leetcode.type07_tree_and_binary_tree;
 
 import java.util.ArrayList;
 import java.util.HashMap;
