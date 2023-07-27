@@ -42,6 +42,7 @@ public class No36 {
 
     /**
      * 思路：分别按行、按列、按九宫遍历
+     * 另外，官方解答中，也可以把三次遍历转为一次遍历，并同时记录三种条件下的重复情况
      * 复杂度：1（遍历次数为常数）
      */
     public static boolean isValidSudoku(char[][] board) {
