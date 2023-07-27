@@ -66,6 +66,19 @@ public class FormatConversion {
     }
 
     /**
+     * 字符串转二维char数组
+     *
+     * @param str
+     * @return
+     */
+    public static char[][] strToCharArrayArray(String str) {
+        str = commonRemove(str);
+        str = StringUtils.remove(str, "\"");
+        String[] split = str.split("\\],\\[");
+        return Arrays.stream(split).map(FormatConversion::strToCharArray).toArray(char[][]::new);
+    }
+
+    /**
      * 字符串转一维String数组
      *
      * @param str
