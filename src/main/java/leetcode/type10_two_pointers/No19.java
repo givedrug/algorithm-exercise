@@ -3,7 +3,7 @@ package leetcode.type10_two_pointers;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNode;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 19. Remove Nth Node From End of List
@@ -15,11 +15,11 @@ public class No19 {
 
     public static void main(String[] args) {
         // [1,2,3,5]
-        printListNode(removeNthFromEnd(strToListNode("[1,2,3,4,5]"), 2));
+        printList(removeNthFromEnd(strToListNode("[1,2,3,4,5]"), 2));
         // []
-        printListNode(removeNthFromEnd(strToListNode("[1]"), 1));
+        printList(removeNthFromEnd(strToListNode("[1]"), 1));
         // [1]
-        printListNode(removeNthFromEnd(strToListNode("[1,2]"), 1));
+        printList(removeNthFromEnd(strToListNode("[1,2]"), 1));
     }
 
     /**

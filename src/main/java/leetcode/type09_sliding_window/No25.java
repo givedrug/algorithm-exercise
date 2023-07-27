@@ -3,7 +3,7 @@ package leetcode.type09_sliding_window;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNode;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 25. Reverse Nodes in k-Group
@@ -15,9 +15,9 @@ public class No25 {
 
     public static void main(String[] args) {
         // [2,1,4,3,5]
-        printListNode(reverseKGroup(strToListNode("[1,2,3,4,5]"), 2));
+        printList(reverseKGroup(strToListNode("[1,2,3,4,5]"), 2));
         // [3,2,1,4,5]
-        printListNode(reverseKGroup(strToListNode("[1,2,3,4,5]"), 3));
+        printList(reverseKGroup(strToListNode("[1,2,3,4,5]"), 3));
     }
 
     /**

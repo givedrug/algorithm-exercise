@@ -3,7 +3,7 @@ package leetcode.type03_linked_list;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNode;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 82. Remove Duplicates from Sorted List II
@@ -15,17 +15,17 @@ public class No82 {
 
     public static void main(String[] args) {
         // [1,2,5]
-        printListNode(deleteDuplicates(strToListNode("[1,2,3,3,4,4,5]")));
+        printList(deleteDuplicates(strToListNode("[1,2,3,3,4,4,5]")));
         // [2,3]
-        printListNode(deleteDuplicates(strToListNode("[1,1,1,2,3]")));
+        printList(deleteDuplicates(strToListNode("[1,1,1,2,3]")));
         // [1,2,3]
-        printListNode(deleteDuplicates(strToListNode("[1,2,3,4,4,4]")));
+        printList(deleteDuplicates(strToListNode("[1,2,3,4,4,4]")));
         // []
-        printListNode(deleteDuplicates(strToListNode("[1,1]")));
+        printList(deleteDuplicates(strToListNode("[1,1]")));
         // [1]
-        printListNode(deleteDuplicates(strToListNode("[1]")));
+        printList(deleteDuplicates(strToListNode("[1]")));
         // []
-        printListNode(deleteDuplicates(strToListNode("[]")));
+        printList(deleteDuplicates(strToListNode("[]")));
     }
 
     /**

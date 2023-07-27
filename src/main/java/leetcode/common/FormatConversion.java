@@ -1,11 +1,16 @@
 package leetcode.common;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Objects;
+import java.util.Queue;
+import java.util.concurrent.LinkedBlockingQueue;
+import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 
 import leetcode.common.DataStructureDefinition.ListNode;
+import leetcode.common.DataStructureDefinition.TreeNode;
 
 /**
  * 数据格式转换
@@ -113,21 +118,7 @@ public class FormatConversion {
     }
 
     /**
-     * 字符串转List数组
-     *
-     * @param str
-     * @return
-     */
-    public static ListNode[] strToListNodeArray(String str) {
-        String[] split = commonRemove(str).split("\\],\\[");
-        if (split.length == 0) {
-            return new ListNode[0];
-        }
-        return Arrays.stream(split).map(FormatConversion::strToListNode).toArray(ListNode[]::new);
-    }
-
-    /**
-     * 字符串转ListNode，并在pos处成环，返回head
+     * 字符串转List，并在pos处成环，返回head
      *
      * @param str
      * @param pos
@@ -148,6 +139,69 @@ public class FormatConversion {
             tail.next = posNode;
         }
         return head;
+    }
+
+    /**
+     * 字符串转List数组
+     *
+     * @param str
+     * @return
+     */
+    public static ListNode[] strToListNodeArray(String str) {
+        String[] split = commonRemove(str).split("\\],\\[");
+        if (split.length == 0) {
+            return new ListNode[0];
+        }
+        return Arrays.stream(split).map(FormatConversion::strToListNode).toArray(ListNode[]::new);
+    }
+
+    /**
+     * 字符串转二叉树
+     *
+     * @param str
+     * @return
+     */
+    public static TreeNode strToTree(String str) {
+        List<TreeNode> treeNodes = Arrays.stream(commonRemove(str).split(",")).map(v -> {
+            if ("null".equals(v)) {
+                return null;
+            } else {
+                return new TreeNode(Integer.parseInt(v));
+            }
+        }).collect(Collectors.toList());
+        int length = treeNodes.size();
+
+        // 先将root入队列
+        TreeNode root = treeNodes.get(0);
+        Queue<TreeNode> queue = new LinkedBlockingQueue<>();
+        queue.offer(root);
+
+        int index = 0;
+        while (!queue.isEmpty()) {
+            TreeNode poll = queue.poll();
+            // left
+            if (++index < length) {
+                TreeNode treeNode = treeNodes.get(index);
+                if (treeNode != null) {
+                    poll.left = treeNode;
+                    queue.offer(treeNode);
+                }
+            } else {
+                break;
+            }
+            // right
+            if (++index < length) {
+                TreeNode treeNode = treeNodes.get(index);
+                if (treeNode != null) {
+                    poll.right = treeNode;
+                    queue.offer(treeNode);
+                }
+            } else {
+                break;
+            }
+        }
+
+        return root;
     }
 
 }

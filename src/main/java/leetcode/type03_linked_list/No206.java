@@ -3,7 +3,7 @@ package leetcode.type03_linked_list;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNode;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 206. Reverse Linked List
@@ -15,11 +15,11 @@ public class No206 {
 
     public static void main(String[] args) {
         // [5,4,3,2,1]
-        printListNode(reverseList(strToListNode("[1,2,3,4,5]")));
+        printList(reverseList(strToListNode("[1,2,3,4,5]")));
         // [2,1]
-        printListNode(reverseList(strToListNode("[1,2]")));
+        printList(reverseList(strToListNode("[1,2]")));
         // []
-        printListNode(reverseList(strToListNode("[]")));
+        printList(reverseList(strToListNode("[]")));
     }
 
     /**

@@ -3,7 +3,7 @@ package leetcode.type03_linked_list;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNode;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 328. Odd Even Linked List
@@ -15,9 +15,9 @@ public class No328 {
 
     public static void main(String[] args) {
         // [1,3,5,2,4]
-        printListNode(oddEvenList(strToListNode("[1,2,3,4,5]")));
+        printList(oddEvenList(strToListNode("[1,2,3,4,5]")));
         // [2,3,6,7,1,5,4]
-        printListNode(oddEvenList(strToListNode("[2,1,3,5,6,4,7]")));
+        printList(oddEvenList(strToListNode("[2,1,3,5,6,4,7]")));
     }
 
     /**

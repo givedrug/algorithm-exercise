@@ -5,7 +5,7 @@ import java.util.Objects;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNode;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 203. Remove Linked List Elements
@@ -17,13 +17,13 @@ public class No203 {
 
     public static void main(String[] args) {
         // [1,2,3,4,5]
-        printListNode(removeElements(strToListNode("[1,2,6,3,4,5,6]"), 6));
+        printList(removeElements(strToListNode("[1,2,6,3,4,5,6]"), 6));
         // []
-        printListNode(removeElements(strToListNode("[]"), 1));
+        printList(removeElements(strToListNode("[]"), 1));
         // []
-        printListNode(removeElements(strToListNode("[7,7,7,7]"), 7));
+        printList(removeElements(strToListNode("[7,7,7,7]"), 7));
         // [2]
-        printListNode(removeElements(strToListNode("[1,2]"), 1));
+        printList(removeElements(strToListNode("[1,2]"), 1));
     }
 
     /**

@@ -3,7 +3,7 @@ package leetcode.type03_linked_list;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNode;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 24. Swap Nodes in Pairs
@@ -15,13 +15,13 @@ public class No24 {
 
     public static void main(String[] args) {
         // [2,1,4,3]
-        printListNode(swapPairs(strToListNode("[1,2,3,4]")));
+        printList(swapPairs(strToListNode("[1,2,3,4]")));
         // [2,1,4,3,5]
-        printListNode(swapPairs(strToListNode("[1,2,3,4,5]")));
+        printList(swapPairs(strToListNode("[1,2,3,4,5]")));
         // []
-        printListNode(swapPairs(strToListNode("[]")));
+        printList(swapPairs(strToListNode("[]")));
         // [1]
-        printListNode(swapPairs(strToListNode("[1]")));
+        printList(swapPairs(strToListNode("[1]")));
     }
 
     /**

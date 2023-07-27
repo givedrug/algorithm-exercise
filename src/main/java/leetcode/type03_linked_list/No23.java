@@ -6,7 +6,7 @@ import java.util.PriorityQueue;
 import leetcode.common.DataStructureDefinition.ListNode;
 
 import static leetcode.common.FormatConversion.strToListNodeArray;
-import static leetcode.common.FormatOutput.printListNode;
+import static leetcode.common.FormatOutput.printList;
 
 /**
  * 23. Merge k Sorted Lists
@@ -18,11 +18,11 @@ public class No23 {
 
     public static void main(String[] args) {
         // [1,1,2,3,4,4,5,6]
-        printListNode(mergeKLists(strToListNodeArray("[[1,4,5],[1,3,4],[2,6]]")));
+        printList(mergeKLists(strToListNodeArray("[[1,4,5],[1,3,4],[2,6]]")));
         // []
-        printListNode(mergeKLists(strToListNodeArray("[[]]")));
+        printList(mergeKLists(strToListNodeArray("[[]]")));
         // []
-        printListNode(mergeKLists(strToListNodeArray("[]")));
+        printList(mergeKLists(strToListNodeArray("[]")));
     }
 
     /**
