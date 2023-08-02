@@ -153,7 +153,7 @@ public class No658 {
                 right++;
             }
         }
-        List<Integer> ans = new ArrayList<Integer>();
+        List<Integer> ans = new ArrayList<>();
         for (int i = left + 1; i < right; i++) {
             ans.add(arr[i]);
         }
