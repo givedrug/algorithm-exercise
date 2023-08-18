@@ -1,4 +1,4 @@
-package leetcode.type03_linked_list;
+package leetcode.type04_hash_table;
 
 import java.util.HashMap;
 import java.util.Map;
