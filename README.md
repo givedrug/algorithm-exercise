@@ -1,2 +1,3 @@
 # algorithm-exercise
-more than leetcode
+
+more than algorithm
