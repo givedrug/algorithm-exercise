@@ -1,9 +1,9 @@
 package algorithm.class09_sliding_window;
 
-import algorithm.common.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
 
-import static algorithm.common.FormatConversion.strToListNode;
-import static algorithm.common.FormatOutput.printList;
+import static algorithm.utils.FormatConversion.strToListNode;
+import static algorithm.utils.FormatOutput.printList;
 
 /**
  * 25. Reverse Nodes in k-Group

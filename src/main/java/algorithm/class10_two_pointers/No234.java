@@ -1,8 +1,8 @@
 package algorithm.class10_two_pointers;
 
-import algorithm.common.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
 
-import static algorithm.common.FormatConversion.strToListNode;
+import static algorithm.utils.FormatConversion.strToListNode;
 
 /**
  * 234. Palindrome Linked List

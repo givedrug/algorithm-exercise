@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 350. Intersection of Two Arrays II

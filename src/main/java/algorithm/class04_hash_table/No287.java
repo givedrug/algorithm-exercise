@@ -3,7 +3,7 @@ package algorithm.class04_hash_table;
 import java.util.HashSet;
 import java.util.Set;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 287. Find the Duplicate Number

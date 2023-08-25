@@ -1,6 +1,6 @@
 package algorithm.class10_two_pointers;
 
-import static algorithm.common.FormatConversion.strToCharArray;
+import static algorithm.utils.FormatConversion.strToCharArray;
 
 /**
  * 344. Reverse String

@@ -1,6 +1,6 @@
 package algorithm.class10_two_pointers;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 27. Remove Element

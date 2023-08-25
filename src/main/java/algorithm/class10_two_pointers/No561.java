@@ -3,7 +3,7 @@ package algorithm.class10_two_pointers;
 import java.util.Arrays;
 import java.util.stream.IntStream;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 561. Array Partition

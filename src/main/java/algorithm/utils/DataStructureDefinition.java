@@ -1,4 +1,4 @@
-package algorithm.common;
+package algorithm.utils;
 
 /**
  * 数据结构定义

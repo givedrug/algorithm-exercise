@@ -8,10 +8,10 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Set;
 
-import algorithm.common.DataStructureDefinition.TreeNode;
+import algorithm.utils.DataStructureDefinition.TreeNode;
 
-import static algorithm.common.FormatConversion.strToTree;
-import static algorithm.common.FormatOutput.printTreeList;
+import static algorithm.utils.FormatConversion.strToTree;
+import static algorithm.utils.FormatOutput.printTreeList;
 
 /**
  * 652. Find Duplicate Subtrees

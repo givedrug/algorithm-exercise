@@ -1,8 +1,8 @@
 package algorithm.class10_two_pointers;
 
-import algorithm.common.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
 
-import static algorithm.common.FormatConversion.strToListNodeWithCycle;
+import static algorithm.utils.FormatConversion.strToListNodeWithCycle;
 
 /**
  * 141. Linked List Cycle

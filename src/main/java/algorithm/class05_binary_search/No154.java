@@ -1,6 +1,6 @@
 package algorithm.class05_binary_search;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 154. Find Minimum in Rotated Sorted Array II

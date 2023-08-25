@@ -1,4 +1,4 @@
-package algorithm.common;
+package algorithm.utils;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,8 +7,8 @@ import java.util.Queue;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.stream.Collectors;
 
-import algorithm.common.DataStructureDefinition.ListNode;
-import algorithm.common.DataStructureDefinition.TreeNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.TreeNode;
 
 /**
  * 格式化输出

@@ -1,9 +1,9 @@
 package algorithm.class03_linked_list;
 
-import algorithm.common.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
 
-import static algorithm.common.FormatConversion.strToListNode;
-import static algorithm.common.FormatOutput.printList;
+import static algorithm.utils.FormatConversion.strToListNode;
+import static algorithm.utils.FormatOutput.printList;
 
 /**
  * 82. Remove Duplicates from Sorted List II

@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Objects;
 
-import static algorithm.common.FormatConversion.strToIntArrayArray;
+import static algorithm.utils.FormatConversion.strToIntArrayArray;
 
 /**
  * 56. Merge Intervals

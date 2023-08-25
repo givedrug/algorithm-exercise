@@ -1,6 +1,6 @@
 package algorithm.class05_binary_search;
 
-import static algorithm.common.FormatConversion.strToCharArray;
+import static algorithm.utils.FormatConversion.strToCharArray;
 
 /**
  * 744. Find Smallest Letter Greater Than Target

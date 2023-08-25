@@ -1,6 +1,6 @@
 package algorithm.class09_sliding_window;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 209. Minimum Size Subarray Sum

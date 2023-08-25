@@ -3,10 +3,10 @@ package algorithm.class03_linked_list;
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
-import algorithm.common.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
 
-import static algorithm.common.FormatConversion.strToListNodeArray;
-import static algorithm.common.FormatOutput.printList;
+import static algorithm.utils.FormatConversion.strToListNodeArray;
+import static algorithm.utils.FormatOutput.printList;
 
 /**
  * 23. Merge k Sorted Lists

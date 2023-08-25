@@ -3,7 +3,7 @@ package algorithm.class04_hash_table;
 import java.util.HashSet;
 import java.util.Set;
 
-import static algorithm.common.FormatConversion.strToCharArrayArray;
+import static algorithm.utils.FormatConversion.strToCharArrayArray;
 
 /**
  * 36. Valid Sudoku

@@ -1,8 +1,8 @@
 package algorithm.class03_linked_list;
 
-import algorithm.common.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
 
-import static algorithm.common.FormatConversion.strToListNode;
+import static algorithm.utils.FormatConversion.strToListNode;
 
 /**
  * 1290. Convert Binary Number in a Linked List to Integer

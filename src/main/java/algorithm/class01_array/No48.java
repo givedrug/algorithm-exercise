@@ -2,7 +2,7 @@ package algorithm.class01_array;
 
 import java.util.Arrays;
 
-import static algorithm.common.FormatConversion.strToIntArrayArray;
+import static algorithm.utils.FormatConversion.strToIntArrayArray;
 
 /**
  * 48. Rotate Image

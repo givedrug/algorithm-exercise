@@ -2,7 +2,7 @@ package algorithm.class10_two_pointers;
 
 import java.util.Arrays;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 283. Move Zeroes

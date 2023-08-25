@@ -1,8 +1,8 @@
 package algorithm.class07_tree_and_binary_tree;
 
-import algorithm.common.DataStructureDefinition.TreeNode;
+import algorithm.utils.DataStructureDefinition.TreeNode;
 
-import static algorithm.common.FormatConversion.strToTree;
+import static algorithm.utils.FormatConversion.strToTree;
 
 /**
  * 270. Closest Binary Search Tree Value

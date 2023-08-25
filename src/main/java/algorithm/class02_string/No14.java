@@ -1,6 +1,6 @@
 package algorithm.class02_string;
 
-import static algorithm.common.FormatConversion.strToStringArray;
+import static algorithm.utils.FormatConversion.strToStringArray;
 
 /**
  * 14. Longest Common Prefix

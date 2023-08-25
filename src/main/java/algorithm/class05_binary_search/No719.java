@@ -2,7 +2,7 @@ package algorithm.class05_binary_search;
 
 import java.util.Arrays;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 719. Find K-th Smallest Pair Distance

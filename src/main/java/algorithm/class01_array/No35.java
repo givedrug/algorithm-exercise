@@ -1,6 +1,6 @@
 package algorithm.class01_array;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 35. Search Insert Position

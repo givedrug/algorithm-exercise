@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-import static algorithm.common.FormatConversion.strToIntArrayArray;
+import static algorithm.utils.FormatConversion.strToIntArrayArray;
 
 /**
  * 面试题 01.08. Zero Matrix LCCI

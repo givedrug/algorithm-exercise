@@ -3,7 +3,7 @@ package algorithm.class05_binary_search;
 import java.util.ArrayList;
 import java.util.List;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 658. Find K Closest Elements

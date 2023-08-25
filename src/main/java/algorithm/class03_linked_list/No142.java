@@ -1,8 +1,8 @@
 package algorithm.class03_linked_list;
 
-import algorithm.common.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
 
-import static algorithm.common.FormatConversion.strToListNodeWithCycle;
+import static algorithm.utils.FormatConversion.strToListNodeWithCycle;
 
 /**
  * 142. Linked List Cycle II

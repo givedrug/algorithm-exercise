@@ -3,7 +3,7 @@ package algorithm.class04_hash_table;
 import java.util.HashMap;
 import java.util.Map;
 
-import static algorithm.common.FormatConversion.strToIntArray;
+import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
  * 454. 4Sum II

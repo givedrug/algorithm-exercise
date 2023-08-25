@@ -1,4 +1,4 @@
-package algorithm.common;
+package algorithm.utils;
 
 import java.util.Arrays;
 import java.util.List;
@@ -9,8 +9,8 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.StringUtils;
 
-import algorithm.common.DataStructureDefinition.ListNode;
-import algorithm.common.DataStructureDefinition.TreeNode;
+import algorithm.utils.DataStructureDefinition.ListNode;
+import algorithm.utils.DataStructureDefinition.TreeNode;
 
 /**
  * 数据格式转换
