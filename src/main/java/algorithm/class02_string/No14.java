@@ -22,7 +22,7 @@ public class No14 {
     /**
      * 思路：遍历String数组，每个String转为char数组，两两获取公共前缀。
      * （还有另一种方法，先比较所有字符串的第一个字符，然后比较所有字符串的第二个字符……，这两种方法复杂度相同）
-     * 复杂度：？（所有字符的个数）
+     * 复杂度：n（所有字符的个数）
      */
     public static String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {

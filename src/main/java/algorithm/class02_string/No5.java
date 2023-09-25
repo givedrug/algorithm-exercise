@@ -17,7 +17,7 @@ public class No5 {
 
     /**
      * 思路：遍历字符，分别将当前字符作为回文中心查找最大回文串（注意奇数回文与偶数回文的差异）
-     * 复杂度：n*n
+     * 复杂度：n^2
      */
     public static String longestPalindrome(String s) {
         String longestPalindrome = "";

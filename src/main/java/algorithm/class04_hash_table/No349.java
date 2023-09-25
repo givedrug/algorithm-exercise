@@ -22,7 +22,7 @@ public class No349 {
     }
 
     /**
-     * 思路：使用set
+     * 思路：使用HashSet
      * 复杂度：n
      */
     public static int[] intersection(int[] nums1, int[] nums2) {

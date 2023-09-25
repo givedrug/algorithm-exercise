@@ -17,7 +17,7 @@ public class No28 {
 
     /**
      * 思路：KMP
-     * 复杂度：n*m
+     * 复杂度：n+m
      */
     public static int strStr(String haystack, String needle) {
         char[] h = haystack.toCharArray();

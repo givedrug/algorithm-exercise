@@ -6,20 +6,20 @@ import java.util.stream.Collectors;
 import static algorithm.utils.FormatConversion.strToIntArray;
 
 /**
- * 剑指 Offer 45. 把数组排成最小的数
+ * LCR 164. 破解闯关密码
  *
  * @author <a href="https://github.com/givedrug">givedrug</a>
  * @create 2023-08-25 14:28
  */
-public class 剑指Offer45 {
+public class LCR164 {
 
     public static void main(String[] args) {
         // "3033459"
-        System.out.println(minNumber(strToIntArray("[3,30,34,5,9]")));
+        System.out.println(crackPassword(strToIntArray("[3,30,34,5,9]")));
         // "01012032233010301302333530535599"
-        System.out.println(minNumber(strToIntArray("[2,203,23,3,33,301,302,3010,55,99,53,530,0,01,10]")));
+        System.out.println(crackPassword(strToIntArray("[2,203,23,3,33,301,302,3010,55,99,53,530,0,01,10]")));
         // "12112"
-        System.out.println(minNumber(strToIntArray("[12,121]")));
+        System.out.println(crackPassword(strToIntArray("[12,121]")));
     }
 
     /**
@@ -33,8 +33,8 @@ public class 剑指Offer45 {
      * <p>
      * 复杂度：n*log(n)
      */
-    public static String minNumber(int[] nums) {
-        return Arrays.stream(nums)
+    public static String crackPassword(int[] password) {
+        return Arrays.stream(password)
             .mapToObj(String::valueOf)
             .sorted((a, b) -> (a + b).compareTo(b + a))
             .collect(Collectors.joining(""));
@@ -43,11 +43,11 @@ public class 剑指Offer45 {
     /**
      * 原答案
      *
-     * @param nums
+     * @param password
      * @return
      */
-    public static String minNumber1(int[] nums) {
-        return Arrays.stream(nums)
+    public static String crackPassword1(int[] password) {
+        return Arrays.stream(password)
             .mapToObj(String::valueOf)
             .sorted((a, b) -> {
                 char[] charsA = a.toCharArray();

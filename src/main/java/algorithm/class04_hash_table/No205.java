@@ -23,7 +23,7 @@ public class No205 {
     }
 
     /**
-     * 思路：保存两字符串的对应字符的映射关系
+     * 思路：保存两字符串的对应字符的映射关系，注意要保留相互两份映射
      * 复杂度：n
      */
     public static boolean isIsomorphic(String s, String t) {

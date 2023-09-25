@@ -24,7 +24,7 @@ public class No350 {
     }
 
     /**
-     * 思路：使用map
+     * 思路：使用HashMap，计数
      * 复杂度：n
      */
     public static int[] intersect(int[] nums1, int[] nums2) {

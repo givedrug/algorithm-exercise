@@ -35,7 +35,7 @@ public class No380 {
     }
 
     /**
-     * 思路：使用一个Map，一个ArrayList
+     * 思路：使用一个HashMap，一个ArrayList
      * 复杂度：1
      */
     public static class RandomizedSet {

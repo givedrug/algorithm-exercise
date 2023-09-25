@@ -19,8 +19,8 @@ public class No202 {
     }
 
     /**
-     * 思路：使用hashSet
-     * 另外，官方解答中还提出可以使用快慢指针和链表来实现，等价于找到链表是否有环
+     * 思路：使用HashSet
+     * 另外，官方解答中还提出可以使用快慢指针来实现，等价于找到链表是否有环
      * 复杂度：？
      */
     public static boolean isHappy(int n) {

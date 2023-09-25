@@ -18,7 +18,7 @@ public class No704 {
     }
 
     /**
-     * 思路：二分查找
+     * 思路：二分法
      * 复杂度：log(n)
      */
     public static int search(int[] nums, int target) {

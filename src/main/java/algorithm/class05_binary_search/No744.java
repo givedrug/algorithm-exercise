@@ -20,7 +20,7 @@ public class No744 {
     }
 
     /**
-     * 思路：二分
+     * 思路：二分法
      * 复杂度：log(n)
      */
     public static char nextGreatestLetter(char[] letters, char target) {
