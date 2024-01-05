@@ -1,5 +1,7 @@
 package algorithm.class04_hash_table;
 
+import java.util.LinkedList;
+
 /**
  * 705. Design HashSet
  *
@@ -38,12 +40,12 @@ public class No705 {
      * 3）扩容机制，当元素个数过多时，可以对其进行扩容，降低hash冲突概率
      * 复杂度：>1
      */
-    class MyHashSet {
+    class MyHashSet0 {
 
         private final int SIZE = 16;
         ListNode[] array;
 
-        public MyHashSet() {
+        public MyHashSet0() {
             array = new ListNode[16];
         }
 
@@ -125,4 +127,56 @@ public class No705 {
 
     }
 
+
+    class MyHashSet {
+        private static final int BASE = 769;
+        private LinkedList<Integer>[] data;
+
+        /**
+         * 初始化
+         */
+        public MyHashSet() {
+            data = new LinkedList[BASE];
+            for (int i = 0; i < BASE; ++i) {
+                data[i] = new LinkedList<>();
+            }
+        }
+
+        public void add(int key) {
+            int h = hash(key);
+            for (Integer element : data[h]) {
+                if (element == key) {
+                    return;
+                }
+            }
+            data[h].offerLast(key);
+        }
+
+        public void remove(int key) {
+            int h = hash(key);
+            for (Integer element : data[h]) {
+                if (element == key) {
+                    data[h].remove(element);
+                    return;
+                }
+            }
+        }
+
+        /**
+         * 如果存在key，则返回true
+         */
+        public boolean contains(int key) {
+            int h = hash(key);
+            for (Integer element : data[h]) {
+                if (element == key) {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private int hash(int key) {
+            return key % BASE;
+        }
+    }
 }
