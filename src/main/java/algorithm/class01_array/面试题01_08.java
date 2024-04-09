@@ -12,7 +12,7 @@ import static algorithm.utils.FormatConversion.strToIntArrayArray;
  * @author <a href="https://github.com/givedrug">givedrug</a>
  * @create 2023-07-05 19:00
  */
-public class 面试题0108 {
+public class 面试题01_08 {
 
     public static void main(String[] args) {
         // [
