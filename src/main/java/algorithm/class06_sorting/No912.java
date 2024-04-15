@@ -23,7 +23,7 @@ public class No912 {
     }
 
     /**
-     * 思路：快排
+     * 思路：快排（或者直接使用计数排序，可以获得O(n)的时间复杂度）
      * 复杂度：n*log(n)
      */
     public static int[] sortArray(int[] nums) {
