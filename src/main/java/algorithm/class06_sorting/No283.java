@@ -26,10 +26,10 @@ public class No283 {
 
     /**
      * 思路：
-     * 方法一：冒泡方式，复杂度n^2
-     * 方法二：双指针，左右指针中间皆为0，复杂度n
+     * 方法一：冒泡方式，复杂度O(n^2)
+     * 方法二：双指针，左右指针中间皆为0，复杂度O(n)
      * <p>
-     * 复杂度：n
+     * 复杂度：O(n)
      */
     public static void moveZeroes(int[] nums) {
         int boundary = nums.length;

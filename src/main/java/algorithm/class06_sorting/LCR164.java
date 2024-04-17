@@ -31,7 +31,7 @@ public class LCR164 {
      * 查看题解，发现自己想复杂了，其实任意两个数字，直接比较(a + b)与(b + a)的字典序即可，
      * 但我最开始的想法也有一点优势，就是占空间小一些，因为java字符串拼接会额外申请空间
      * <p>
-     * 复杂度：n*log(n)
+     * 复杂度：O(n*log(n))
      */
     public static String crackPassword(int[] password) {
         return Arrays.stream(password)
